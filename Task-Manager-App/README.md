@@ -1,16 +1,45 @@
-# React + Vite
+# Task Manager App 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that allows users to manage their daily tasks, including adding, viewing, and organizing tasks efficiently using form validation.
 
-Currently, two official plugins are available:
+## Project Creation & Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was initialized using Vite. Here are the steps to recreate or set it up:
 
-## React Compiler
+### 1. Initialize the Vite Project
+```bash
+npm create vite@latest Task-Manager-App -- --template react
+cd Task-Manager-App
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Install Core Dependencies
+Install standard Vite dependencies:
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+### 3. Install Additional Packages
+This project requires Tailwind CSS for styling and React Hook Form for handling form inputs:
+```bash
+npm install @tailwindcss/vite react-hook-form
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 4. Running the Application
+Start the development server:
+```bash
+npm run dev
+```
+Open your browser and visit the local URL provided in the terminal (usually `http://localhost:5173`).
+
+## Packages Used & Their Functionalities
+
+- **`react` & `react-dom`**: The foundational libraries for building interactive user interfaces.
+- **`react-hook-form`**: A performant and flexible library for managing form state and validation, minimizing re-renders.
+- **`@tailwindcss/vite`**: The official Vite plugin for integrating Tailwind CSS to style the application easily.
+- **`vite`**: The incredibly fast frontend tooling used for local development and optimized production builds.
+
+## Features
+
+- **Add Tasks:** Create new tasks with ease using a controlled and validated form.
+- **Form Validation:** Ensures required task details are entered correctly before submission using `react-hook-form`.
+- **Responsive UI:** Fully responsive design built with Tailwind CSS, working smoothly on mobile and desktop.

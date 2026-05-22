@@ -1,16 +1,48 @@
-# React + Vite
+# Country Explorer 🌍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that fetches and displays information about countries from the [REST Countries API](https://restcountries.com/). Users can view a list of countries and filter them by name using a search bar.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Country Data Fetching:** Fetches country details (name, capital, population, region, flags) from an external API.
+- **Search Functionality:** Filter countries in real-time by typing in the search bar.
+- **Responsive UI:** Styled using Tailwind CSS for a clean and responsive user interface.
+- **Loading & Error States:** Displays appropriate messages while data is being fetched or if an error occurs.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React:** Frontend library for building the user interface.
+- **Vite:** Fast development server and build tool.
+- **Tailwind CSS:** Utility-first CSS framework for styling.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository or navigate to the project directory:
+   ```bash
+   cd country-explorer
+   ```
+
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the App
+
+Start the development server:
+```bash
+npm run dev
+```
+Open your browser and visit the local URL provided in the terminal (usually `http://localhost:5173`) to view the application.
+
+## Project Structure
+
+- `src/App.jsx`: Main application component handling state, API requests, and layout.
+- `src/components/SearchBar.jsx`: Component for the search input.
+- `src/components/CountryList.jsx`: Component rendering the list of filtered countries.
